@@ -35,3 +35,32 @@ function userMove() {
     hasUserMoved = true;
     maybeShowResult();
 }
+
+function maybeShowResult(){
+    if (hasComputerMoved === true && hasUserMoved === true){
+        showResult();
+        gameOver = true;
+    }
+}
+
+function showResult(){
+    const comp = compMoveEl.textContent;
+    const user = userMoveEl.textContent;
+
+    if (comp === user) {
+        result.textContent = "Game is tied!";
+    } else if (
+        (user === "rock" && comp === "scissor") ||
+        (user === "paper" && comp === "rock") ||
+        (user === "scissor" && comp === "paper")
+    ) {
+        result.textContent = "You Win!";
+    } else {
+        result.textContent = "Computer Wins!";
+    }
+
+    gameOverMessage.style.display = "block";
+    newGameButton.style.display = "inline-block";
+
+    gameOver = true;
+}
