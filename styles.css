@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.3); /* Optional: adds a subtle background for readability */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+h1 {
+    font-size: 48px;
+    color: gold; /* Use a visible solid color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+button {
+    color: #fff;
+    width: 180px;
+    background: linear-gradient(135deg, goldenrod, orange);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #f7b731, #f1c40f);
+    transform: scale(1.05);
+}
+
+p {
+    color: #f1f1f1;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+p#game-over-message {
+    color: #ff4c4c;
+    font-size: 24px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px black;
+}
+
+#comp-move,
+#user-move,
+#result {
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    padding: 8px;
+    margin: 5px auto;
+    width: fit-content;
+}
