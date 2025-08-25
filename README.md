@@ -1,4 +1,4 @@
-## Rock Paper Scissor Game is a game where:
+## Rock Paper Scissor Game is a game built in JavaScript where:
     # Computer choose one of three hand gestures: rock, paper, or scissors.
     # You choose one of three hand gestures: rock, paper, or scissors.
     # Rock crushes scissors, scissors cuts paper, and paper covers rock.
