@@ -64,3 +64,14 @@ function showResult(){
 
     gameOver = true;
 }
+
+function startNewGame() {
+    compMoveEl.textContent = "";
+    userMoveEl.textContent = "";
+    result.textContent = "";
+    gameOverMessage.style.display = "none";
+    newGameButton.style.display = "none";
+    hasComputerMoved = false;
+    hasUserMoved = false;
+    gameOver = false;
+}
