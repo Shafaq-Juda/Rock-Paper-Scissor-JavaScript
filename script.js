@@ -1,3 +1,9 @@
+let result = document.getElementById("result");
+let compMoveEl = document.getElementById("comp-move");
+let userMoveEl = document.getElementById("user-move");
+let gameOverMessage = document.getElementById("game-over-message");
+let newGameButton = document.getElementById("new-game-button");
+
 let moves = ["rock", "paper", "scissor"];
 
 let hasComputerMoved = false;
