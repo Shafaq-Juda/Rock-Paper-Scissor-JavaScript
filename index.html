@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Rock Paper Scissor Game</title>
+</head>
+<body>
+    <div class="game-container">
+    <h1>WELCOME TO ROCK PAPER SCISSOR</h1>
+    <button onclick="computerMove()">Computer Move</button>
+    <p id="comp-move"></p>
+
+    <button onclick="userMove()">Player Move</button>
+    <p id="user-move"></p>
+
+    <p id="result"></p>
+
+    <p id="game-over-message" style="display: none;">GAME OVER!</p>
+
+    <button id="new-game-button" onclick="startNewGame()" style="display: none;">START NEW GAME</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
